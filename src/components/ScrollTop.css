@@ -1,0 +1,22 @@
+.scroll-top {
+  position: static;
+  bottom: 20px;
+  right: 20px;
+
+  background: transparent; /* icon handles design */
+  border: none;
+  cursor: pointer;
+
+  font-size: 40px; /* controls icon size */
+  color: #3852B4;
+
+  z-index: 9999;
+  transition: all 0.3s ease;
+}
+
+.scroll-top:hover {
+  transform: scale(1.2);
+  color: #2c3e94;
+}
+
+
