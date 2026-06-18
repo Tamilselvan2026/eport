@@ -1,0 +1,41 @@
+.floating-contact {
+  position: fixed;
+  right: 18px;
+  bottom: 18px;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 12px 16px;
+  border-radius: 999px;
+  background: linear-gradient(135deg, #2dd4bf, #38bdf8);
+  color: #031520;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 600;
+  border: 1px solid rgba(255, 255, 255, 0.16);
+  box-shadow: 0 16px 34px rgba(45, 212, 191, 0.25);
+  z-index: 9999;
+  transition: transform 0.2s ease, box-shadow 0.2s ease, filter 0.2s ease;
+}
+
+.floating-contact svg {
+  font-size: 18px;
+}
+
+.floating-contact:hover {
+  transform: translateY(-2px);
+  filter: brightness(1.03);
+  box-shadow: 0 18px 38px rgba(45, 212, 191, 0.3);
+}
+
+@media (max-width: 640px) {
+  .floating-contact {
+    right: 14px;
+    bottom: 14px;
+    padding: 11px 13px;
+  }
+
+  .floating-contact span {
+    display: none;
+  }
+}
