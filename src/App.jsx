@@ -1,11 +1,11 @@
 import { Routes, Route } from "react-router-dom";
 import Navbar from "./components/Navbar";
-import ScrollTop from "./components/ScrollTop";
 import Home from "./pages/Home";
 import Skills from "./pages/Skills";
 import Projects from "./pages/Projects";
 import Contact from "./pages/Contact";
 import Details from "./pages/Details";
+import FloatingContact from "./components/FloatingContact";
 import "./App.css";
 
 function App() {
@@ -22,7 +22,7 @@ function App() {
           <Route path="/details" element={<Details />} />
         </Routes>
       </div>   
-    <div className="scrollsize" ><ScrollTop className="icon" /> </div>      
+      <FloatingContact />
     </div>
   );
 }
